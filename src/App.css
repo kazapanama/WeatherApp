@@ -1,0 +1,40 @@
+body{
+  background-color: #f5f5f5;
+  background-color:rgb(46, 123, 240);
+}
+
+.wrapper{
+  max-width: 100vw;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  height:100vh;
+  
+}
+
+
+.cities{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap:5rem;
+
+}
+
+
+.card-bg{
+  background-color:#FFF;
+  width:90vw;
+  height:400px;
+  margin-bottom: 200px;
+  border-radius: 2em;
+}
+
+.bg-city{
+  display: block;
+  width:100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
