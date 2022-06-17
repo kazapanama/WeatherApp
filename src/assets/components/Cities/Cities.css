@@ -1,0 +1,16 @@
+.cities{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    
+  
+  }
+  
+  .active{
+    border-bottom: 4px solid #292929;
+    font-weight: 700;
+  }
+
+  h2{
+    font-weight: 400;
+  }

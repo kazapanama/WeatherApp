@@ -1,0 +1,5 @@
+.forecast{
+    display: flex;
+    justify-content: space-between;
+    padding:3px 20px;
+}
