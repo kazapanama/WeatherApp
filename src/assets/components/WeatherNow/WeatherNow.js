@@ -12,9 +12,15 @@ const WeatherNow = ({data, load}) => {
               </div>
               
               <div className="right-side">
-              <h3>Weather:{data.list[0].weather[0].main}</h3>
-              <h3>Wind:{data.list[0].wind.speed} mp/H</h3>
-                <h3>Humidity:{data.list[0].main.humidity}%</h3>
+                <h3>{data.list[0].weather[0].main}</h3>
+                    
+                    <div>
+                      <img src='./img/icons/arrow.png' className="icon"/> <h3> {data.list[0].wind.speed} mp/H </h3>
+                    </div>
+                    <div>
+                      <img src='./img/icons/droplet.png' className="icon"/> <h3> {data.list[0].main.humidity}%</h3>
+                    </div>
+                
               </div>
           </div>
           

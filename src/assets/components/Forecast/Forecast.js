@@ -16,9 +16,9 @@ const Forecast = ({data,day})=>{
                     <div className="forecast" key={item.dt}>
                         <span>{Math.round(item.main.temp)}C</span>
                         <span>{item.weather[0].main}</span>
-                        <span>{(item.dt_txt).slice(11)}</span>
+                        <span>{(item.dt_txt).slice(11,16)}</span>
                         
-                        {/* <span>{daysOfTheWeek[new Date(item.dt_txt).getDay()].slice(0,3)}</span> */}
+                        
                        
                     </div>
                 )

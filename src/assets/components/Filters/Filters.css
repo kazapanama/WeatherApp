@@ -1,4 +1,6 @@
 h4{
+    cursor: pointer;
+    color: rgba(29, 29, 29, 0.8);
     font-weight: 400;
 }
 

@@ -65,9 +65,9 @@ function App() {
     console.log(day)
   }
 
-
+  
   useEffect(() => {
-    fetch(`./forecast${city}.json`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?id=${city}&units=metric&limit=3&appid=c434b870dbae3cfa791929187f6c21c2`)
     .then(response => response.json())
         
     .then(data => {

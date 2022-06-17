@@ -4,19 +4,31 @@ body{
   width:100vw;
   height:100vh;
   overflow: hidden;
+  
 }
 
+.bg-color{
+  margin: 0 auto;
+  width:100%;
+  height: 100%;
+  
+}
+
+
 .wrapper{
+  margin:0 auto;
   max-width: 800px;
   display:flex;
   justify-content: center;
   align-items:center;
   flex-direction: column;
   height:100vh;
+  overflow: hidden;
   
 }
 
 .card-bg{
+  display: block;
   background-color:rgba(255,255,255,0.8);
   width:90%;
   min-height:500px;
@@ -25,13 +37,7 @@ body{
   
 }
 
-.bg-city{
-  display: block;
-  width:100%;
-  position: absolute;
-  bottom: 0;
-  z-index: 1;
-}
+
 
 
 

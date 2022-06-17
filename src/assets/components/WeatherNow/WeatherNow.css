@@ -4,7 +4,7 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    
+    margin-top:30px;
   }
 
 
@@ -30,4 +30,24 @@
     display: block;
     margin-bottom: 0;
     margin-top: 10px;
+  }
+
+  .icon{
+    width:1em;
+    height: 1.5em;
+  }
+
+  .right-side > div {
+    display: flex;
+    align-items:center;
+    gap:10px;
+    margin:5px 0
+  }
+
+  .right-side > h3 {
+    margin-top: 0;
+  }
+
+  .right-side >h3{
+    font-size: 2em;
   }
