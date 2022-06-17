@@ -1,9 +1,9 @@
 import './Forecast.css';
 
-const Forecast = ({data,today})=>{
+const Forecast = ({data,day})=>{
    
 
-   
+   let daysOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 
     return(
              
@@ -11,13 +11,14 @@ const Forecast = ({data,today})=>{
             
             
             
-            if (today === new Date(item.dt_txt).getDay()){
+            if (day === new Date(item.dt_txt).getDay()){
                 return(
                     <div className="forecast" key={item.dt}>
-                        <span>{item.main.temp}C</span>
+                        <span>{Math.round(item.main.temp)}C</span>
                         <span>{item.weather[0].main}</span>
-                        <span>{(item.dt_txt).slice(12)}</span>
-                        <span>{new Date(item.dt_txt).getDay()}</span>
+                        <span>{(item.dt_txt).slice(11)}</span>
+                        
+                        {/* <span>{daysOfTheWeek[new Date(item.dt_txt).getDay()].slice(0,3)}</span> */}
                        
                     </div>
                 )
