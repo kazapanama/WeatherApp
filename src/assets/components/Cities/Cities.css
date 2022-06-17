@@ -2,15 +2,17 @@
     display: flex;
     justify-content: space-around;
     align-items:center;
-    
+    margin-bottom: 10px;
   
   }
   
   .active{
-    border-bottom: 4px solid #292929;
+    border-bottom: 2px solid blue;
     font-weight: 700;
+    color: rgba(29, 29, 29, 1);
   }
 
   h2{
+    color: rgba(29, 29, 29, 0.8);
     font-weight: 400;
   }

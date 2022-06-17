@@ -1,3 +1,7 @@
+h4{
+    font-weight: 400;
+}
+
 .filters{
     display: flex;
     justify-content: space-between;
