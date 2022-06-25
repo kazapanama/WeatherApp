@@ -1,9 +1,6 @@
 import { useEffect,useState } from 'react';
 import './App.css';
 
-
-
-
 import Cities from './assets/components/Cities/Cities';
 import WeatherNow from './assets/components/WeatherNow/WeatherNow';
 import Forecast from './assets/components/Forecast/Forecast';
@@ -12,12 +9,12 @@ import CityImg from './assets/components/CityImg/CityImg';
 
 
 function App() {
-  
- 
 
   let today = new Date().getDay()
   let dayTime = new Date().getHours()
 
+
+  //setting up colors for bg
   let dayPart = '';
   let colors = ['#090057','#02affd','#0077ff','#242492'];
   let bgColor ='';
@@ -51,6 +48,7 @@ function App() {
   }
 
 
+  
   function chooseDay(e){
     
     if (e.target.innerText === 'today'){
@@ -60,9 +58,7 @@ function App() {
     } else if (e.target.innerText ==='day after'){
       today === 5 ? setDay(0) : (today === 6 ? setDay(1) : setDay(today+2));
     }
-    
-    
-    console.log(day)
+
   }
 
   
@@ -77,13 +73,7 @@ function App() {
       })
   },[city],)
 
-  
-    
-    
-    
- 
-  
-  
+
   return (
 
   <div className='bg-color' style={{backgroundColor:`${bgColor}`}}>

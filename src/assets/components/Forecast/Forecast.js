@@ -2,15 +2,11 @@ import './Forecast.css';
 
 const Forecast = ({data,day})=>{
    
-
-   let daysOfTheWeek = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-
     return(
              
         data.list.map((item)=>{
             
-            
-            
+
             if (day === new Date(item.dt_txt).getDay()){
                 return(
                     <div className="forecast" key={item.dt}>
@@ -18,16 +14,10 @@ const Forecast = ({data,day})=>{
                         <span>{item.weather[0].main}</span>
                         <span>{(item.dt_txt).slice(11,16)}</span>
                         
-                        
-                       
                     </div>
                 )
             }
             
-            
-            
-                
-              
                 })
                 
     )
