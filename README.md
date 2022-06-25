@@ -12,5 +12,7 @@ and as a bonus it dynamicly changes background depending on choosed city or curr
 
 - That was my first hands-on expirience with react
 - Learned usual structure of react projects
+- Learned how to use basic react hooks
 - Got basic idea of props and state flow inside components
 - Worked with OpenWeatherMap api, and learned how to dynamicly render data it provides
+- Learned how to build and deploy an app on netlify
